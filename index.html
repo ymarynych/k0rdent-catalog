@@ -385,64 +385,44 @@
 <p><select id="filterTags">
 <br />
 <option value="all">All</option></p>
-<p></select>
-<select id="ordering">
-<br />
-<option value="asc">Asc</option></p>
-<option value="desc">Desc</option>
 <p></select></p>
-<div id="cards" class="grid"></div>
+<ul id="docsList"></ul>
 
 <script>
-fetch("data.json")
+fetch("/search/search_index.json")  // MkDocs' built-in search index
   .then(response => response.json())
   .then(data => {
-    // console.log(data)
-    let list = document.getElementById("cards");
+    console.log(data)
+    let list = document.getElementById("docsList");
     let select = document.getElementById("filterTags");
-    let ordering = document.getElementById("ordering");
-
     let tagsSet = new Set();
+
+    let pages = data.docs; // List of all pages in MkDocs
 
     function renderList(items) {
       list.innerHTML = "";
       items.forEach(item => {
-        let a = document.createElement("a");
-        a.href = item.link;
-        a.className = "card";
-        let tagString = item.tags.join(", ");
-        a.setAttribute("data-tags", item.tags.join(" "));
-        a.innerHTML = `
-            <img src="${item.logo}" alt="logo"/>
-            <p>
-            <b>${item.title}</b>
-            <span>-</span> ${item.description}
-            </p>`;
-        list.appendChild(a);
+        let li = document.createElement("li");
+        let tagString = item.tags ? item.tags.join(", ") : "";
+        li.setAttribute("data-tags", tagString);
+        li.innerHTML = `<a href="${item.location}">${item.title}</a> <small>(${tagString})</small>`;
+        list.appendChild(li);
 
-        item.tags.forEach(tag => tagsSet.add(tag));
+        if (item.tags) {
+          item.tags.forEach(tag => tagsSet.add(tag));
+        }
       });
 
       select.innerHTML = `<option value="all">All</option>` + 
         [...tagsSet].map(tag => `<option value="${tag}">${tag}</option>`).join("");
     }
 
-    renderList(data);
+    renderList(pages);
 
     select.addEventListener("change", function () {
       let filter = this.value;
-      let filtered = filter === "all" ? data : data.filter(item => item.tags.includes(filter));
+      let filtered = filter === "all" ? pages : pages.filter(item => item.tags?.includes(filter));
       renderList(filtered);
-    });
-
-    ordering.addEventListener("change", function () {
-      let filter = this.value;
-      if(filter==='asc'){
-        renderList(data.sort((a, b) => a.title.localeCompare(b.title)));
-      }
-      if(filter==='desc'){
-        renderList(data.sort((a, b) => b.title.localeCompare(a.title)));
-      }
     });
   });
 </script>
