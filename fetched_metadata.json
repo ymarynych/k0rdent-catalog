@@ -1,5 +1,40 @@
 [
   {
+    "link": "./charts/nvidia/nvidia/",
+    "title": "Nvidia GPU Operator",
+    "logo": "https://assets.nvidiagrid.net/ngc/logos/GPUoperator.png",
+    "tags": [],
+    "description": "NVIDIA GPU Operator creates/configures/manages GPUs atop Kubernetes."
+  },
+  {
+    "link": "./charts/istio/istio/",
+    "title": "Istio",
+    "logo": "https://istio.io/latest/favicons/android-192x192.png",
+    "tags": [],
+    "description": "Networking and security solution specifically designed for Kubernetes clusters."
+  },
+  {
+    "link": "./charts/calico/calico/",
+    "title": "Calico",
+    "logo": "https://docs.tigera.io/img/calico-logo.png",
+    "tags": [],
+    "description": "Networking and security solution specifically designed for Kubernetes clusters."
+  },
+  {
+    "link": "./infra/vsphere/vsphere/",
+    "title": "VMware vSphere",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2e/VMware-vSphere-7.jpg",
+    "tags": [],
+    "description": "Deploy kubernetes clusters with k0rdent on VMware vSphere infrastructure."
+  },
+  {
+    "link": "./infra/openstack/openstack/",
+    "title": "OpenStack",
+    "logo": "https://avatars.githubusercontent.com/u/324574?s=200&v=4",
+    "tags": [],
+    "description": "Deploy kubernetes clusters with k0rdent on OpenStack infrastructure."
+  },
+  {
     "link": "./infra/aws/aws/",
     "title": "Amazon Web Services",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",

@@ -7,6 +7,7 @@
 
 
 
+
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -270,14 +271,11 @@
 <li>Simplified Deployment: k0rdent can automate the deployment and configuration of Argo CD in your clusters, reducing manual effort.</li>
 <li>Policy-Driven Deployments: Leverage k0rdent's policy engine to enforce security and compliance policies for your Argo CD deployments and application configurations.</li>
 </ul>
-<h2 id="references">References</h2>
-<ul>
-<li><a href="https://akuity.io/security-hardened-argo-cd">Commercial support</a></li>
-<li><a href="https://argo-cd.readthedocs.io/en/stable/">Official docs</a></li>
-</ul>
+<p><br>
+Looking for Commercial Support? <a class="bold" href="https://akuity.io/security-hardened-argo-cd" target="_blank">LEARN MORE</a></p>
 </div>
 <div class="tabbed-block">
-<p>Install service template to k0rdent
+<p>Install template to k0rdent
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>helm<span class="w"> </span>install<span class="w"> </span>argocd<span class="w"> </span>oci://ghcr.io/k0rdent/catalog/charts/argo-cd-service-template<span class="w"> </span>-n<span class="w"> </span>kcm-system
 </span></code></pre></div></p>
 <p>Verify service template
@@ -296,6 +294,8 @@
 </span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">argocd</span>
 </span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">        </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">argocd</span>
 </span></code></pre></div></p>
+<p><br>
+- <a href="https://argo-cd.readthedocs.io/en/stable/" target="_blank">Official docs</a></p>
 </div>
 </div>
 </div>
@@ -326,7 +326,17 @@
         
       </main>
       
-        <footer class="md-footer">
+        <div class="md-container back-to-catalog">
+    <div class="md-main">
+      <div class="md-main__inner md-grid">
+        <div class="md-content__inner md-typeset">
+          <a href="../../.."><b>BACK TO CATALOG</b></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="md-footer">
     
     <div class="md-footer-meta md-typeset">
       <div class="md-footer-meta__inner md-grid">

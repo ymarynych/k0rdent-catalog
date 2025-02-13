@@ -7,6 +7,7 @@
 
 
 
+
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -292,21 +293,19 @@
 <li>Infrastructure as Code: Leverage infrastructure-as-code capabilities to define and manage your Azure infrastructure and Kubernetes deployments in a declarative manner.</li>
 <li>Simplified Configuration: K0rdent handles the complexities of configuring network settings, security policies, and storage integration for your Azure hosted Kubernetes clusters.</li>
 </ul>
-<h2 id="references">References</h2>
-<ul>
-<li><a href="https://azure.microsoft.com/en-us/support/">Commercial support</a></li>
-</ul>
+<p><br>
+Looking for Commercial Support? <a class="bold" href="https://azure.microsoft.com/en-us/support/" target="_blank">LEARN MORE</a></p>
 </div>
 <div class="tabbed-block">
-<p>Install cluster template to k0rdent
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># k0rdent includes the cluster template for AWS out of the box</span>
-</span></code></pre></div>
-Verify cluster template
+<p>Install template to k0rdent
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># k0rdent includes the template for Azure out of the box</span>
+</span></code></pre></div></p>
+<p>Verify cluster template
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="l l-Scalar l-Scalar-Plain">kubectl get clustertemplate -n kcm-system</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="l l-Scalar l-Scalar-Plain"># NAME                            VALID</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="l l-Scalar l-Scalar-Plain"># azure-hosted-cp-0-1-0           true</span><span class="w"> </span>
-</span></code></pre></div>
-Create a cluster on Microsoft Azure 
+</span></code></pre></div></p>
+<p>Create a cluster on Microsoft Azure 
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">k0rdent.mirantis.com/v1alpha1</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ClusterDeployment</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nt">metadata</span><span class="p">:</span>
@@ -324,6 +323,8 @@ Create a cluster on Microsoft Azure
 </span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">    </span><span class="nt">worker</span><span class="p">:</span>
 </span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">      </span><span class="nt">vmSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Standard_A4_v2</span>
 </span></code></pre></div></p>
+<p><br>
+- <a href="https://docs.k0rdent.io/latest/template-azure/" target="_blank">Official docs</a></p>
 </div>
 </div>
 </div>
@@ -354,7 +355,17 @@ Create a cluster on Microsoft Azure
         
       </main>
       
-        <footer class="md-footer">
+        <div class="md-container back-to-catalog">
+    <div class="md-main">
+      <div class="md-main__inner md-grid">
+        <div class="md-content__inner md-typeset">
+          <a href="../../.."><b>BACK TO CATALOG</b></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="md-footer">
     
     <div class="md-footer-meta md-typeset">
       <div class="md-footer-meta__inner md-grid">

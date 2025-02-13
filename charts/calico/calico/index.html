@@ -1,9 +1,9 @@
 
 <meta name="tags" content="">
-<meta name="md_description" content="Portable, event-driven runtime.">
-<meta name="md_title" content="Dapr">
+<meta name="md_description" content="Networking and security solution specifically designed for Kubernetes clusters.">
+<meta name="md_title" content="Calico">
 <meta name="md_link" content="">
-<meta name="md_logo" content="./charts/dapr/dapr-logo.svg">
+<meta name="md_logo" content="https://docs.tigera.io/img/calico-logo.png">
 
 
 
@@ -15,7 +15,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Portable, event-driven runtime.">
+        <meta name="description" content="Networking and security solution specifically designed for Kubernetes clusters.">
       
       
         <meta name="author" content="Mirantis, Inc.">
@@ -29,7 +29,7 @@
     
     
       
-        <title>Dapr - k0rdent Catalog</title>
+        <title>Calico - k0rdent Catalog</title>
       
     
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dapr" class="md-skip">
+        <a href="#calico" class="md-skip">
           Skip to content
         </a>
       
@@ -260,29 +260,23 @@
   
 
 
-<p><img _="," align="right" alt="dapr" src="../dapr-logo.svg" width="100" /></p>
-<h1 id="dapr">Dapr</h1>
+<p><img _="," align="right" alt="logo" src="https://docs.tigera.io/img/calico-logo.png" width="100" /></p>
+<h1 id="calico">Calico</h1>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Description</label><label for="__tabbed_1_2">Install</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>Dapr (Distributed Application Runtime) is an open-source, portable, event-driven runtime that makes it easy for developers to build resilient, microservices applications that run on the cloud and edge. Dapr provides APIs that abstract away the complexities of common challenges when building distributed applications, such as: 
-Service-to-service invocation: Enables reliable and secure communication between microservices. </p>
-<p>State management: Provides a consistent way to manage application state. </p>
-<p>Publish and subscribe: Allows microservices to communicate asynchronously through message brokers. </p>
-<p>Bindings: Connects applications to external systems and services (e.g., databases, message queues, cloud services). </p>
-<p>Actors: Provides a framework for building stateful, concurrent objects. </p>
-<p>Observability: Offers built-in observability features, including tracing, metrics, and logging.</p>
+<p>Calico is a networking and security solution specifically designed for Kubernetes clusters, allowing containers and pods to communicate securely across the network by utilizing a layer-3 based routing approach, effectively managing network policies and providing robust security controls for cloud-native applications; essentially, it acts as a container network interface (CNI) plugin within Kubernetes to manage network connectivity between pods within a cluster.</p>
 <p><br>
-Looking for Commercial Support? <a class="bold" href="https://www.diagrid.io/conductor" target="_blank">LEARN MORE</a></p>
+Looking for Commercial Support? <a class="bold" href="https://www.tigera.io/customer-success/" target="_blank">LEARN MORE</a></p>
 </div>
 <div class="tabbed-block">
-<p>Install Service template
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>helm<span class="w"> </span>install<span class="w"> </span>dapr<span class="w"> </span>oci://ghcr.io/k0rdent/catalog/charts/dapr-service-template<span class="w"> </span>-n<span class="w"> </span>kcm-system
+<p>Install template to k0rdent
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>helm<span class="w"> </span>install<span class="w"> </span>tigera-operator<span class="w"> </span>oci://ghcr.io/k0rdent/catalog/charts/tigera-operator-service-template<span class="w"> </span>-n<span class="w"> </span>kcm-system
 </span></code></pre></div></p>
 <p>Verify service template
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>kubectl<span class="w"> </span>get<span class="w"> </span>servicetemplates<span class="w"> </span>-A
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1"># NAMESPACE    NAME                       VALID</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># kcm-system   dapr-1-14-4                true</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># kcm-system   tigera-operator-3-29-2     true</span>
 </span></code></pre></div></p>
 <p>Deploy service template
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">k0rdent.mirantis.com/v1alpha1</span>
@@ -291,18 +285,12 @@ Looking for Commercial Support? <a class="bold" href="https://www.diagrid.io/con
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nn">...</span>
 </span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="nt">serviceSpec</span><span class="p">:</span>
 </span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="nt">services</span><span class="p">:</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">template</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dapr-1-14-4</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dapr</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">        </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dapr-system</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">        </span><span class="nt">values</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">          </span><span class="no">dapr-dashboard:</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">            </span><span class="no">ingress:</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">              </span><span class="no">enabled: true</span>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">              </span><span class="no">className: nginx</span>
-</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">              </span><span class="no">host: &#39;dapr.example.com&#39;</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">template</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tigera-operator-3-29-2</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tigera-operator</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">        </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tigera-operator</span>
 </span></code></pre></div></p>
 <p><br>
-- <a href="https://docs.dapr.io/" target="_blank">Official docs</a></p>
+- <a href="https://docs.tigera.io/calico" target="_blank">Official docs</a></p>
 </div>
 </div>
 </div>

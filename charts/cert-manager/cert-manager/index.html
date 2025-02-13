@@ -7,6 +7,7 @@
 
 
 
+
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -261,18 +262,23 @@
 
 <p><img _="," align="right" alt="logo" src="https://github.com/cert-manager/cert-manager/blob/master/logo/logo-small.png?raw=true" width="200" /></p>
 <h1 id="cert-manager">Cert manager</h1>
-<h2 id="installation">Installation</h2>
-<p>This service template is typically pre-installed in k0rdent. If not
-install it:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>helm<span class="w"> </span>install<span class="w"> </span>cert-manager<span class="w"> </span>oci://ghcr.io/k0rdent/catalog/charts/cert-manager-service-template<span class="w"> </span>-n<span class="w"> </span>kcm-system
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Description</label><label for="__tabbed_1_2">Install</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Cert-manager is a Kubernetes add-on that automates the management of TLS certificates. It can issue, renew, and validate certificates from various sources, including public and private issuers.</p>
+<p><br>
+Looking for Commercial Support? <a class="bold" href="https://cert-manager.io/support/" target="_blank">LEARN MORE</a></p>
+</div>
+<div class="tabbed-block">
+<p>Install template to k0rdent
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># k0rdent includes the template for Cert-manager out of the box</span>
 </span></code></pre></div></p>
-<p>Check the template is available:
+<p>Verify service template
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>kubectl<span class="w"> </span>get<span class="w"> </span>servicetemplates<span class="w"> </span>-A
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1"># NAMESPACE    NAME                       VALID</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># kcm-system   cert-manager-1-16-2        true</span>
 </span></code></pre></div></p>
-<h2 id="usage">Usage</h2>
-<p>Use the template in k0rdent manifests <code>ClusterDeployment</code> or <code>MultiClusterService</code>:
+<p>Deploy service template
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">k0rdent.mirantis.com/v1alpha1</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ClusterDeployment</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1"># kind: MultiClusterService</span>
@@ -283,10 +289,11 @@ install it:
 </span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cert-manager</span>
 </span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">        </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cert-manager</span>
 </span></code></pre></div></p>
-<h2 id="references">References</h2>
-<ul>
-<li><a href="https://kubernetes.github.io/cert-manager/">Official docs</a></li>
-</ul>
+<p><br>
+- <a href="https://kubernetes.github.io/cert-manager/" target="_blank">Official docs</a></p>
+</div>
+</div>
+</div>
 
 
 
@@ -314,7 +321,17 @@ install it:
         
       </main>
       
-        <footer class="md-footer">
+        <div class="md-container back-to-catalog">
+    <div class="md-main">
+      <div class="md-main__inner md-grid">
+        <div class="md-content__inner md-typeset">
+          <a href="../../.."><b>BACK TO CATALOG</b></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="md-footer">
     
     <div class="md-footer-meta md-typeset">
       <div class="md-footer-meta__inner md-grid">

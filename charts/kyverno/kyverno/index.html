@@ -7,6 +7,7 @@
 
 
 
+
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -264,25 +265,29 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Description</label><label for="__tabbed_1_2">Install</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>Dex is an identity service that acts as a bridge between your Kubernetes cluster and various identity providers. Think of it as a gatekeeper that verifies who you are before granting you access to your Kubernetes resources.</p>
-<h2 id="references">References</h2>
+<p>Kyverno is a powerful open-source policy engine designed specifically for Kubernetes. It allows you to define and enforce policies that govern the configuration and behavior of your Kubernetes resources, ensuring security, compliance, and operational best practices. 
+Here's a breakdown of its key features:</p>
 <ul>
-<li><a href="https://kyverno.github.io/kyverno/">Official docs</a></li>
-<li><a href="https://nirmata.com/nirmata-enterprise-for-kyverno/">Commercial support</a></li>
+<li>Kubernetes Native: Kyverno is built for Kubernetes, using the same YAML format and API objects as Kubernetes itself, making it easy to learn and use.</li>
+<li>Policy-as-Code: Define policies as code, enabling version control, collaboration, and automation. </li>
+<li>Validation and Mutation: Kyverno can validate resources against policies before they are created or modified, and it can also mutate resources to enforce compliance. </li>
+<li>Image Verification: Verify the integrity and provenance of container images, ensuring that only trusted images are deployed. </li>
+<li>Resource Validation: Validate resource configurations against security and compliance standards, preventing misconfigurations. </li>
+<li>RBAC Integration: Integrates with Kubernetes RBAC to control who can create, modify, and apply policies.</li>
 </ul>
+<p><br>
+Looking for Commercial Support? <a class="bold" href="https://nirmata.com/nirmata-enterprise-for-kyverno/" target="_blank">LEARN MORE</a></p>
 </div>
 <div class="tabbed-block">
-<p>This service template is typically pre-installed in k0rdent. If not
-install it:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>helm<span class="w"> </span>install<span class="w"> </span>kyverno<span class="w"> </span>oci://ghcr.io/k0rdent/catalog/charts/kyverno-service-template<span class="w"> </span>-n<span class="w"> </span>kcm-system
+<p>Install Service template
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># k0rdent includes the template for Kyverno out of the box</span>
 </span></code></pre></div></p>
-<p>Check the template is available:
+<p>Verify service template
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>kubectl<span class="w"> </span>get<span class="w"> </span>servicetemplates<span class="w"> </span>-A
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1"># NAMESPACE    NAME                VALID</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># kcm-system   kyverno-3-2-6       true</span>
 </span></code></pre></div></p>
-<h2 id="usage">Usage</h2>
-<p>Use the template in k0rdent manifests <code>ClusterDeployment</code> or <code>MultiClusterService</code>:
+<p>Deploy service template
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">k0rdent.mirantis.com/v1alpha1</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ClusterDeployment</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1"># kind: MultiClusterService</span>
@@ -293,6 +298,8 @@ install it:
 </span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kyverno</span>
 </span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">        </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kyverno</span>
 </span></code></pre></div></p>
+<p><br>
+- <a href="https://kyverno.github.io/kyverno/" target="_blank">Official docs</a></p>
 </div>
 </div>
 </div>
@@ -323,7 +330,17 @@ install it:
         
       </main>
       
-        <footer class="md-footer">
+        <div class="md-container back-to-catalog">
+    <div class="md-main">
+      <div class="md-main__inner md-grid">
+        <div class="md-content__inner md-typeset">
+          <a href="../../.."><b>BACK TO CATALOG</b></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="md-footer">
     
     <div class="md-footer-meta md-typeset">
       <div class="md-footer-meta__inner md-grid">

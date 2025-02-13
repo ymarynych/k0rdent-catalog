@@ -1,25 +1,3 @@
-<!--
-  Copyright (c) 2016-2025 Martin Donath <martin.donath@squidfunk.com>
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to
-  deal in the Software without restriction, including without limitation the
-  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-  sell copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in
-  all copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-  IN THE SOFTWARE.
--->
-
 
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
 <meta name="tags" content="">
@@ -27,6 +5,7 @@
 <meta name="md_title" content="k0rdent Application Catalog">
 <meta name="md_link" content="">
 <meta name="md_logo" content="">
+
 
 
 
@@ -305,7 +284,7 @@
 <p>Unlock the full potential of the k0rdent Distributed Container Management Environment with a catalog of complementary services. The catalog features a selection of best-in-class solutions designed to enhance k0rdent managed clusters. These services have been validated on k0rdents clusters and have existing templates for easy deployment. Please check back often as the list is continuously growing.</p>
 <div class="filters-section">
     <div class="select-wrapper">
-        <label for="filterTags">Filter By Tags: </label>  
+        <label for="filterTags">Filter By Categories: </label>  
         <select id="filterTags">
             <option value="all">All</option>
         </select>
@@ -313,8 +292,8 @@
     <div class="select-wrapper">
         <label for="ordering">Order By Title: </label>
         <select id="ordering">
-            <option value="asc">Ascending</option>
-            <option value="desc">Descending</option>
+            <option value="asc">A-Z</option>
+            <option value="desc">Z-A</option>
         </select>
     </div>
 </div>
@@ -393,7 +372,6 @@ fetch("fetched_metadata.json")
     });
   });
 
-
 </script>
 
 
@@ -422,7 +400,17 @@ fetch("fetched_metadata.json")
         
       </main>
       
-    <footer class="md-footer">
+    <div class="md-container back-to-catalog">
+    <div class="md-main">
+      <div class="md-main__inner md-grid">
+        <div class="md-content__inner md-typeset">
+          <a href="."><b>BACK TO CATALOG</b></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="md-footer">
     
     <div class="md-footer-meta md-typeset">
       <div class="md-footer-meta__inner md-grid">
