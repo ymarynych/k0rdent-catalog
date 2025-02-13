@@ -22,6 +22,14 @@
 
 
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+<meta name="tags" content="">
+<meta name="md_description" content="">
+<meta name="md_title" content="k0rdent Application Catalog">
+<meta name="md_link" content="">
+<meta name="md_logo" content="">
+
+
+
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -314,7 +322,7 @@
 <div id="cards" class="grid"></div>
 
 <script>
-fetch("data.json")
+fetch("fetched_metadata.json")
   .then(response => response.json())
   .then(data => {
     // console.log(data)
@@ -384,6 +392,8 @@ fetch("data.json")
       }
     });
   });
+
+
 </script>
 
 
