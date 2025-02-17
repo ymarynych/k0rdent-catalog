@@ -182,5 +182,14 @@
     "logo": "https://github.com/kubernetes-sigs/external-dns/raw/master/docs/img/external-dns.png",
     "tags": [],
     "description": "Synchronizes exposed Kubernetes Services and Ingresses with DNS providers."
+  },
+  {
+    "link": "./charts/kdash/kdash/",
+    "title": "Kubernetes Dashboard",
+    "logo": "https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.svg",
+    "tags": [
+      "Observability"
+    ],
+    "description": "General purpose, web-based UI for Kubernetes clusters."
   }
 ]
