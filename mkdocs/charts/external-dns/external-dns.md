@@ -58,4 +58,4 @@ logo: "https://github.com/kubernetes-sigs/external-dns/raw/master/docs/img/exter
     ~~~
 
     <br>
-    - [Official docs](https://kubernetes-sigs.github.io/external-dns/latest/){ target="_blank" }
+  - [Official docs](https://kubernetes-sigs.github.io/external-dns/latest/){ target="_blank" }

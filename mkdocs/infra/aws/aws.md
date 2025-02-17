@@ -55,4 +55,4 @@ logo: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_L
     ~~~
 
     <br>
-    - [Official docs](https://docs.k0rdent.io/latest/template-aws/){ target="_blank" }
+  - [Official docs](https://docs.k0rdent.io/latest/template-aws/){ target="_blank" }

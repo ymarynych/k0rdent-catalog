@@ -48,4 +48,4 @@ logo: "https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.
     ~~~
 
     <br>
-    - [Official docs](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/){ target="_blank" }
+  - [Official docs](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/){ target="_blank" }

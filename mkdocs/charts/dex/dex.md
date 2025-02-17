@@ -45,4 +45,4 @@ logo: "https://raw.githubusercontent.com/dexidp/website/9ac240c84d3e34766814cd9e
     ~~~
 
     <br>
-    - [Official docs](https://dexidp.io/docs/){ target="_blank" }
+- [Official docs](https://dexidp.io/docs/){ target="_blank" }

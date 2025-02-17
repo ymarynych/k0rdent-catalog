@@ -48,4 +48,4 @@ logo: "https://argo-cd.readthedocs.io/en/stable/assets/logo.png"
     ~~~
 
     <br>
-    - [Official docs](https://argo-cd.readthedocs.io/en/stable/){ target="_blank" }
+  - [Official docs](https://argo-cd.readthedocs.io/en/stable/){ target="_blank" }

@@ -58,4 +58,4 @@ logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure
     ~~~
 
     <br>
-    - [Official docs](https://docs.k0rdent.io/latest/template-azure/){ target="_blank" }
+  - [Official docs](https://docs.k0rdent.io/latest/template-azure/){ target="_blank" }

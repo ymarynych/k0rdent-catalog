@@ -49,4 +49,4 @@ logo: "https://istio.io/latest/favicons/android-192x192.png"
     ~~~
 
     <br>
-    - [Official docs](https://istio.io/latest/docs/ambient/install/helm/){ target="_blank" }
+- [Official docs](https://istio.io/latest/docs/ambient/install/helm/){ target="_blank" }

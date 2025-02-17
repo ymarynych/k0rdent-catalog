@@ -42,4 +42,4 @@ logo: "https://cdn-images-1.medium.com/max/1600/1*-9mb3AKnKdcL_QD3CMnthQ.png"
     ~~~
 
     <br>
-    - [Official docs](https://vmware-tanzu.github.io/helm-charts/){ target="_blank" }
+  - [Official docs](https://vmware-tanzu.github.io/helm-charts/){ target="_blank" }

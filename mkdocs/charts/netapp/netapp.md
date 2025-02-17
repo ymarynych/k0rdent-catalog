@@ -44,4 +44,4 @@ logo: "https://raw.githubusercontent.com/NetApp/trident/master/logo/trident.png"
     ~~~
 
     <br>
-    - [Official docs](https://docs.netapp.com/us-en/trident/index.html){ target="_blank" }
+  - [Official docs](https://docs.netapp.com/us-en/trident/index.html){ target="_blank" }

@@ -61,4 +61,4 @@ logo: "./charts/dapr/dapr-logo.svg"
     ~~~
 
     <br>
-    - [Official docs](https://docs.dapr.io/){ target="_blank" }
+  - [Official docs](https://docs.dapr.io/){ target="_blank" }

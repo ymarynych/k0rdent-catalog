@@ -53,4 +53,4 @@ logo: "https://github.com/kyverno/kyverno/raw/main/img/logo.png"
     ~~~
 
     <br>
-    - [Official docs](https://kyverno.github.io/kyverno/){ target="_blank" }
+  - [Official docs](https://kyverno.github.io/kyverno/){ target="_blank" }

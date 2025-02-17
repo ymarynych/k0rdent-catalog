@@ -61,4 +61,4 @@ logo: "https://raw.githubusercontent.com/kubecost/.github/9602bea0c06773da66ba43
     ~~~
 
     <br>
-    - [Official docs](https://docs.kubecost.com/){ target="_blank" }
+  - [Official docs](https://docs.kubecost.com/){ target="_blank" }

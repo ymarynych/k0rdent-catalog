@@ -65,4 +65,4 @@ logo: "https://upload.wikimedia.org/wikipedia/commons/2/2e/VMware-vSphere-7.jpg"
     ~~~
 
     <br>
-    - [Official docs](https://docs.k0rdent.io/latest/template-vsphere/){ target="_blank" }
+- [Official docs](https://docs.k0rdent.io/latest/template-vsphere/){ target="_blank" }

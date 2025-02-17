@@ -65,4 +65,4 @@ logo: "https://avatars.githubusercontent.com/u/324574?s=200&v=4"
     ~~~
 
     <br>
-    - [Official docs](https://docs.k0rdent.io/latest/template-openstack/){ target="_blank" }
+- [Official docs](https://docs.k0rdent.io/latest/template-openstack/){ target="_blank" }

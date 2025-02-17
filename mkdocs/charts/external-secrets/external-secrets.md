@@ -46,4 +46,4 @@ logo: "https://raw.githubusercontent.com/external-secrets/external-secrets/main/
     ~~~
 
     <br>
-    - [Official docs](https://external-secrets.io/v0.11.0/){ target="_blank" }
+  - [Official docs](https://external-secrets.io/v0.11.0/){ target="_blank" }
