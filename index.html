@@ -428,6 +428,7 @@ fetch("fetched_metadata.json")
         })
         renderList(filtered_apps, null);
       } else {
+        filtered_apps = []
         renderList(data_apps, null);
       }
 
@@ -465,7 +466,7 @@ fetch("fetched_metadata.json")
 
       }
       if(filter==='desc'){
-        if(filtered_apps.length>0){
+        if(filtered_infra.length>0){
             renderList(null, filtered_infra.sort((a, b) => b.title.localeCompare(a.title)))
         } else {
             renderList(null, data_infra.sort((a, b) => b.title.localeCompare(a.title)));
@@ -474,12 +475,12 @@ fetch("fetched_metadata.json")
     });
 
     //show-more buttons
-    document.querySelector('.btn-show-more-apps').addEventListener('click', function(){
-      document.getElementById('cards-apps').classList+=' show-more';
-    })
-    document.querySelector('.btn-show-more-infra').addEventListener('click', function(){
-      document.getElementById('cards-infra').classList+=' show-more';
-    })
+    // document.querySelector('.btn-show-more-apps').addEventListener('click', function(){
+    //   document.getElementById('cards-apps').classList+=' show-more';
+    // })
+    // document.querySelector('.btn-show-more-infra').addEventListener('click', function(){
+    //   document.getElementById('cards-infra').classList+=' show-more';
+    // })
 
   });
 
