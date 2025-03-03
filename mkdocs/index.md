@@ -4,7 +4,7 @@ template: home.html
 ---
 <div class="maintabs">
   <input type="radio" id="tab_apps" name="maintabs" checked="checked">
-  <label for="tab_apps"><img src="/img/icon-apps.svg" />Applications</label>
+  <label for="tab_apps"><img src="img/icon-apps.svg" />Applications</label>
   <div class="tab tab_apps-content">
       <div class="tab_apps-top">
           <div class="left-side">
@@ -37,7 +37,7 @@ template: home.html
   </div>
 
   <input type="radio" id="tabs_infra" name="maintabs">
-  <label for="tabs_infra"><img src="/img/icon-infra.svg" />Infrastructure</label>
+  <label for="tabs_infra"><img src="img/icon-infra.svg" />Infrastructure</label>
   <div class="tab tabs_infra-content">
     <div class="tab_apps-top">
         <div class="left-side">
