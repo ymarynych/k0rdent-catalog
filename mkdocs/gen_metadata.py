@@ -3,14 +3,26 @@ import json
 import mkdocs_gen_files
 import yaml
 
-# Load list of Markdown file paths from JSON
-with open("paths.json", "r") as f:
-    pages = json.load(f)
+def find_files(root_dir):
+    files = []
+
+    for dirpath, _, filenames in os.walk(root_dir):
+        for file in filenames:
+            if file.endswith(".md"):
+                full_path = os.path.join(dirpath, file)
+                formatted_path = "./" + full_path.replace("\\", "/")
+                files.append(formatted_path)
+
+    return sorted(files)
+
+mkdocs_root = "mkdocs" 
+files = find_files(mkdocs_root)
+
+print("files found:")
 
 metadata_list = []
 
-for page in pages:
-    file_path = page["path"]
+for file_path in files:
 
     if not os.path.exists(file_path):
         print(f"⚠️ Warning: {file_path} not found, skipping...")
