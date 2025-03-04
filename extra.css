@@ -457,10 +457,10 @@ a.blue-green-button-dark-background:hover {
   align-items: flex-end;
 }
 .tab_apps-top .left-side{
-  width: 70%;
+  width: 80%;
 }
 .tab_apps-top .right-side{
-  width: 30%;
+  width: 20%;
   display: flex;
   justify-content: flex-end;
 }
