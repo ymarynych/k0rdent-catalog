@@ -14,7 +14,7 @@ template: home.html
           <div class="right-side">
             <div class="filters-section">
                 <div class="select-wrapper">
-                  <label for="ordering-apps">Sort By: </label>
+                  <label for="ordering-apps">Sort: </label>
                   <select id="ordering-apps">
                       <option value="asc">A-Z</option>
                       <option value="desc">Z-A</option>
@@ -47,7 +47,7 @@ template: home.html
         <div class="right-side">
           <div class="filters-section">
             <div class="select-wrapper">
-                <label for="ordering-infra">Sort By: </label>
+                <label for="ordering-infra">Sort: </label>
                 <select id="ordering-infra">
                     <option value="asc">A-Z</option>
                     <option value="desc">Z-A</option>
