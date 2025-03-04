@@ -1,7 +1,8 @@
 [
   {
-    "link": "./charts/argo/argo/",
+    "link": "./apps\\argo\\argo/",
     "title": "ArgoCD",
+    "type": "",
     "logo": "https://argo-cd.readthedocs.io/en/stable/assets/logo.png",
     "tags": [
       "CI/CD"
@@ -9,8 +10,29 @@
     "description": "Declarative, GitOps continuous delivery tool for Kubernetes."
   },
   {
-    "link": "./charts/calico/calico/",
+    "link": "./apps\\aws\\aws/",
+    "title": "Amazon Web Services",
+    "type": "infra",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
+    "tags": [
+      "Infrastructure"
+    ],
+    "description": "Deploy kubernetes clusters with k0rdent on AWS infrastructure."
+  },
+  {
+    "link": "./apps\\azure\\azure/",
+    "title": "Microsoft Azure",
+    "type": "infra",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/1200px-Microsoft_Azure.svg.png",
+    "tags": [
+      "Infrastructure"
+    ],
+    "description": "Deploy kubernetes clusters with k0rdent on Microsoft Azure infrastructure."
+  },
+  {
+    "link": "./apps\\calico\\calico/",
     "title": "Calico",
+    "type": "",
     "logo": "https://docs.tigera.io/img/calico-logo.png",
     "tags": [
       "Networking",
@@ -20,8 +42,9 @@
     "description": "Networking and security solution specifically designed for Kubernetes clusters."
   },
   {
-    "link": "./charts/cert-manager/cert-manager/",
+    "link": "./apps\\cert-manager\\cert-manager/",
     "title": "Cert-manager",
+    "type": "",
     "logo": "https://github.com/cert-manager/cert-manager/blob/master/logo/logo-small.png?raw=true",
     "tags": [
       "Security",
@@ -30,17 +53,19 @@
     "description": "Management and issuance of TLS certificates."
   },
   {
-    "link": "./charts/dapr/dapr/",
+    "link": "./apps\\dapr\\dapr/",
     "title": "Dapr",
-    "logo": "./charts/dapr/dapr-logo.svg",
+    "type": "",
+    "logo": "./apps/dapr/dapr-logo.svg",
     "tags": [
       "Application Runtime"
     ],
     "description": "Portable, event-driven runtime."
   },
   {
-    "link": "./charts/dex/dex/",
+    "link": "./apps\\dex\\dex/",
     "title": "Dex",
+    "type": "",
     "logo": "https://raw.githubusercontent.com/dexidp/website/9ac240c84d3e34766814cd9ece76710cf075ba23/static/favicons/favicon.png",
     "tags": [
       "Authentication",
@@ -50,15 +75,19 @@
     "description": "OpenID Connect Identity (OIDC) and OAuth 2.0 Provider with Pluggable Connectors."
   },
   {
-    "link": "./charts/external-dns/external-dns/",
+    "link": "./apps\\external-dns\\external-dns/",
     "title": "ExternalDNS",
+    "type": "",
     "logo": "https://github.com/kubernetes-sigs/external-dns/raw/master/docs/img/external-dns.png",
-    "tags": [],
+    "tags": [
+      "Security"
+    ],
     "description": "Synchronizes exposed Kubernetes Services and Ingresses with DNS providers."
   },
   {
-    "link": "./charts/external-secrets/external-secrets/",
+    "link": "./apps\\external-secrets\\external-secrets/",
     "title": "External-secrets",
+    "type": "",
     "logo": "https://raw.githubusercontent.com/external-secrets/external-secrets/main/assets/eso-logo-large.png",
     "tags": [
       "Authentication",
@@ -68,8 +97,9 @@
     "description": "External secret management."
   },
   {
-    "link": "./charts/ingress-nginx/ingress-nginx/",
+    "link": "./apps\\ingress-nginx\\ingress-nginx/",
     "title": "Ingress-nginx",
+    "type": "",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png",
     "tags": [
       "Networking",
@@ -78,8 +108,9 @@
     "description": "Ingress controller for Kubernetes using NGINX as a reverse proxy and load balancer."
   },
   {
-    "link": "./charts/istio/istio/",
+    "link": "./apps\\istio\\istio/",
     "title": "Istio",
+    "type": "",
     "logo": "https://istio.io/latest/favicons/android-192x192.png",
     "tags": [
       "Service mesh",
@@ -88,8 +119,9 @@
     "description": "Open source service mesh that layers transparently onto existing distributed applications."
   },
   {
-    "link": "./charts/kdash/kdash/",
+    "link": "./apps\\kubernetes-dashboard\\kubernetes-dashboard/",
     "title": "Kubernetes Dashboard",
+    "type": "",
     "logo": "https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.svg",
     "tags": [
       "Observability"
@@ -97,18 +129,9 @@
     "description": "General purpose, web-based UI for Kubernetes clusters."
   },
   {
-    "link": "./charts/kubecost/kubecost/",
-    "title": "Kubecost",
-    "logo": "https://raw.githubusercontent.com/kubecost/.github/9602bea0c06773da66ba43cb9ce5e1eb2b797c32/kubecost_logo.png",
-    "tags": [
-      "Finops",
-      "Observability"
-    ],
-    "description": "Monitor your cloud costs."
-  },
-  {
-    "link": "./charts/kyverno/kyverno/",
+    "link": "./apps\\kyverno\\kyverno/",
     "title": "Kyverno",
+    "type": "",
     "logo": "https://github.com/kyverno/kyverno/raw/main/img/logo.png",
     "tags": [
       "Policy",
@@ -117,8 +140,9 @@
     "description": "Kubernetes Native Policy Management."
   },
   {
-    "link": "./charts/netapp/netapp/",
+    "link": "./apps\\netapp\\netapp/",
     "title": "NetApp",
+    "type": "",
     "logo": "https://raw.githubusercontent.com/NetApp/trident/master/logo/trident.png",
     "tags": [
       "Storage",
@@ -127,9 +151,10 @@
     "description": "NetApp's Trident CSI storage provisioner using the Trident Operator."
   },
   {
-    "link": "./charts/nvidia/nvidia/",
+    "link": "./apps\\nvidia\\nvidia/",
     "title": "Nvidia GPU Operator",
-    "logo": "./charts/nvidia/GPUoperator-cropped.png",
+    "type": "",
+    "logo": "./apps/nvidia/GPUoperator-cropped.png",
     "tags": [
       "GPU",
       "AI"
@@ -137,8 +162,40 @@
     "description": "NVIDIA GPU Operator creates/configures/manages GPUs atop Kubernetes."
   },
   {
-    "link": "./charts/pure/pure/",
+    "link": "./apps\\open-webui\\open-webui/",
+    "title": "Open WebUI",
+    "type": "",
+    "logo": "https://raw.githubusercontent.com/open-webui/open-webui/main/static/favicon.png",
+    "tags": [
+      "AI"
+    ],
+    "description": "A User-Friendly Web Interface for Chat Interactions."
+  },
+  {
+    "link": "./apps\\opencost\\opencost/",
+    "title": "OpenCost",
+    "type": "",
+    "logo": "https://github.com/opencost/opencost-website/blob/d8f2a459dd958bf3033dc479f0c0a7677bae03ca/static/img/opencostpig.png?raw=true",
+    "tags": [
+      "Finops",
+      "Observability"
+    ],
+    "description": "Monitor your cloud costs."
+  },
+  {
+    "link": "./apps\\openstack\\openstack/",
+    "title": "OpenStack",
+    "type": "infra",
+    "logo": "https://avatars.githubusercontent.com/u/324574?s=200&v=4",
+    "tags": [
+      "Infrastructure"
+    ],
+    "description": "Deploy kubernetes clusters with k0rdent on OpenStack infrastructure."
+  },
+  {
+    "link": "./apps\\pure\\pure/",
     "title": "Pure",
+    "type": "",
     "logo": "https://raw.githubusercontent.com/purestorage/helm-charts/master/pure-csi/pure-storage.png",
     "tags": [
       "Storage",
@@ -147,8 +204,9 @@
     "description": "Storage service."
   },
   {
-    "link": "./charts/velero/velero/",
+    "link": "./apps\\velero\\velero/",
     "title": "Velero",
+    "type": "",
     "logo": "https://cdn-images-1.medium.com/max/1600/1*-9mb3AKnKdcL_QD3CMnthQ.png",
     "tags": [
       "Backup",
@@ -157,49 +215,9 @@
     "description": "Open source tool to safely backup and restore."
   },
   {
-    "link": "./dev/",
-    "title": "No Title",
-    "logo": " ",
-    "tags": [],
-    "description": "No Description"
-  },
-  {
-    "link": "./index/",
-    "title": "k0rdent Application Catalog",
-    "logo": " ",
-    "tags": [],
-    "description": "No Description"
-  },
-  {
-    "link": "./infra/aws/aws/",
-    "title": "Amazon Web Services",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
-    "tags": [
-      "Infrastructure"
-    ],
-    "description": "Deploy kubernetes clusters with k0rdent on AWS infrastructure."
-  },
-  {
-    "link": "./infra/azure/azure/",
-    "title": "Microsoft Azure",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/1200px-Microsoft_Azure.svg.png",
-    "tags": [
-      "Infrastructure"
-    ],
-    "description": "Deploy kubernetes clusters with k0rdent on Microsoft Azure infrastructure."
-  },
-  {
-    "link": "./infra/openstack/openstack/",
-    "title": "OpenStack",
-    "logo": "https://avatars.githubusercontent.com/u/324574?s=200&v=4",
-    "tags": [
-      "Infrastructure"
-    ],
-    "description": "Deploy kubernetes clusters with k0rdent on OpenStack infrastructure."
-  },
-  {
-    "link": "./infra/vsphere/vsphere/",
+    "link": "./apps\\vsphere\\vsphere/",
     "title": "VMware vSphere",
+    "type": "infra",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2e/VMware-vSphere-7.jpg",
     "tags": [
       "Infrastructure"
