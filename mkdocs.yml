@@ -55,6 +55,7 @@ plugins:
   - tags
   - gen-files:
       scripts:
+        - mkdocs/gen_app_pages.py
         - mkdocs/gen_metadata.py
   - ezglossary:
       section_config:

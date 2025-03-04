@@ -2,28 +2,12 @@ import os
 import json
 import mkdocs_gen_files
 import yaml
+import glob
 
-def find_files(root_dir):
-    files = []
-
-    for dirpath, _, filenames in os.walk(root_dir):
-        for file in filenames:
-            if file.endswith(".md"):
-                full_path = os.path.join(dirpath, file)
-                formatted_path = "./" + full_path.replace("\\", "/")
-                files.append(formatted_path)
-
-    return sorted(files)
-
-mkdocs_root = "mkdocs" 
-files = find_files(mkdocs_root)
-
-print("files found:")
-
+paths = glob.glob("./mkdocs/apps/*/*.md")
 metadata_list = []
 
-for file_path in files:
-
+for file_path in paths:
     if not os.path.exists(file_path):
         print(f"⚠️ Warning: {file_path} not found, skipping...")
         continue
