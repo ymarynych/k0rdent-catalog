@@ -69,14 +69,12 @@ template: home.html
 fetch("fetched_metadata.json")
   .then(response => response.json())
   .then(data => {
-    // console.log(data)
     let data_infra = []
     let data_apps = []
     data.forEach(item=>{
-      if(item.link.includes('./infra')){
+      if(item.type === 'infra'){
         data_infra.push(item)
-      } 
-      if(item.link.includes('./charts')){
+      } else {
         data_apps.push(item)
       }
     })
