@@ -414,11 +414,14 @@ a.blue-green-button-dark-background:hover {
   display: none;
 }
 .maintabs>label {
-  padding: 25px;
+  padding: 12px 25px;
   background-color: #EAEDF5;
   font-weight: bold;
   display: flex;
   align-items: center;
+}
+.maintabs>label:hover{
+  cursor: pointer;
 }
 .maintabs>label img{
   margin-right: 10px;
