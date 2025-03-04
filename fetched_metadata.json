@@ -157,7 +157,7 @@
     "logo": "./apps/nvidia/GPUoperator-cropped.png",
     "tags": [
       "GPU",
-      "AI"
+      "Artificial Intelligence"
     ],
     "description": "NVIDIA GPU Operator creates/configures/manages GPUs atop Kubernetes."
   },
@@ -167,7 +167,7 @@
     "type": "",
     "logo": "https://raw.githubusercontent.com/open-webui/open-webui/main/static/favicon.png",
     "tags": [
-      "AI"
+      "Artificial Intelligence"
     ],
     "description": "A User-Friendly Web Interface for Chat Interactions."
   },
