@@ -474,6 +474,9 @@ a.blue-green-button-dark-background:hover {
   width: 80%;
   padding-left: 16px;
 }
+.categories-title svg{
+  display: none;
+}
 
 @media(max-width: 768px){
   .maintabs input[type="radio"] + label{
@@ -484,6 +487,28 @@ a.blue-green-button-dark-background:hover {
   }
   .tab_apps-sidebar, .tab_apps-main-content, .tab_apps-top .left-side, .tab_apps-top .right-side{
     width: 100%;
+  }
+  .categories-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .categories-title svg{
+    display: block;
+    height: 18px;
+    margin-top: -5px;
+  }
+  #filterTagsApps{
+    height: 0px;
+    overflow: hidden;
+    transition: all .3s;
+  }
+  .tab_apps-sidebar.expanded #filterTagsApps{
+    height: 100%; 
+    transition: all .3s;
+  }
+  .tab_apps-sidebar.expanded .categories-title svg{
+    transform: rotate(180deg);
   }
 }
 
