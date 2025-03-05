@@ -34,4 +34,3 @@ deploy_code: |
             name: tigera-operator
             namespace: tigera-operator
     ~~~
-doc_link: https://docs.tigera.io/calico
