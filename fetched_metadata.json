@@ -193,6 +193,16 @@
     "description": "Deploy kubernetes clusters with k0rdent on OpenStack infrastructure."
   },
   {
+    "link": "./apps\\prometheus\\prometheus/",
+    "title": "Prometheus",
+    "type": "",
+    "logo": "https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png",
+    "tags": [
+      "Observability"
+    ],
+    "description": "From metrics to insight"
+  },
+  {
     "link": "./apps\\pure\\pure/",
     "title": "Pure",
     "type": "",

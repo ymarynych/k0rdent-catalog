@@ -1,11 +1,4 @@
 
-<meta name="tags" content="Finops, Observability">
-<meta name="md_description" content="Monitor your cloud costs.">
-<meta name="md_title" content="OpenCost">
-<meta name="md_link" content="">
-<meta name="md_logo" content="https://github.com/opencost/opencost-website/blob/d8f2a459dd958bf3033dc479f0c0a7677bae03ca/static/img/opencostpig.png?raw=true">
-
-
 
 
 <!doctype html>
@@ -15,7 +8,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Monitor your cloud costs.">
+        <meta name="description" content="Documentation for k0rdent.">
       
       
         <meta name="author" content="Mirantis, Inc.">
@@ -24,16 +17,16 @@
       
       
       
-      <link rel="icon" href="../../../img/favicon.ico">
+      <link rel="icon" href="../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.3">
     
     
       
-        <title>OpenCost - k0rdent Catalog</title>
+        <title>How to Contribute an Application - k0rdent Catalog</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.d7758b05.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.d7758b05.min.css">
       
       
 
@@ -52,9 +45,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../extra.css">
+      <link rel="stylesheet" href="../extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -73,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#opencost" class="md-skip">
+        <a href="#how-to-contribute-an-application" class="md-skip">
           Skip to content
         </a>
       
@@ -89,9 +82,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="k0rdent Catalog" class="md-header__button md-logo" aria-label="k0rdent Catalog" data-md-component="logo">
+    <a href=".." title="k0rdent Catalog" class="md-header__button md-logo" aria-label="k0rdent Catalog" data-md-component="logo">
       
-  <img src="../../../img/k0rdent-catalog-logo-title.svg" alt="logo">
+  <img src="../img/k0rdent-catalog-logo-title.svg" alt="logo">
 
     </a>
     <div class="md-header__title" data-md-component="header-title">
@@ -199,9 +192,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="k0rdent Catalog" class="md-nav__button md-logo" aria-label="k0rdent Catalog" data-md-component="logo">
+    <a href=".." title="k0rdent Catalog" class="md-nav__button md-logo" aria-label="k0rdent Catalog" data-md-component="logo">
       
-  <img src="../../../img/k0rdent-catalog-logo-title.svg" alt="logo">
+  <img src="../img/k0rdent-catalog-logo-title.svg" alt="logo">
 
     </a>
     k0rdent Catalog
@@ -228,7 +221,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -256,83 +249,25 @@
                 
                   
 
-  <nav class="md-tags" >
-    
-      
-      
-      
-        <span class="md-tag">Finops</span>
-      
-    
-      
-      
-      
-        <span class="md-tag">Observability</span>
-      
-    
-  </nav>
-
 
   
   
 
 
-<p><img _="," align="right" alt="logo" src="https://github.com/opencost/opencost-website/blob/d8f2a459dd958bf3033dc479f0c0a7677bae03ca/static/img/opencostpig.png?raw=true" width="100" /></p>
-<h1 id="opencost">OpenCost</h1>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Description</label><label for="__tabbed_1_2">Install</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>OpenCost is a vendor-neutral open-source project for measuring and allocating cloud infrastructure and container costs in real-time.
-It's specifically designed for Kubernetes cost monitoring, providing visibility into your spending and helping you understand how
-resources are being used.</p>
-<p><br>
-Looking for Commercial Support? <a class="bold" href="https://www.kubecost.com/kubernetes-cost-optimization/kubecost-vs-opencost/" target="_blank">LEARN MORE</a></p>
-</div>
-<div class="tabbed-block">
-<h4 id="prerequisites">Prerequisites</h4>
-<p>Deploy k0rdent: <a href="https://docs.k0rdent.io/v0.1.0/guide-to-quickstarts/#guide-to-quickstarts">QuickStart</a></p>
-<h4 id="install-template-to-k0rdent">Install template to k0rdent</h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>opencost<span class="w"> </span>oci://ghcr.io/k0rdent/catalog/charts/kgst<span class="w"> </span>-n<span class="w"> </span>kcm-system<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span>--set<span class="w"> </span><span class="s2">&quot;helm.repository.url=https://opencost.github.io/opencost-helm-chart&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span>--set<span class="w"> </span><span class="s2">&quot;helm.charts[0].name=opencost&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span>--set<span class="w"> </span><span class="s2">&quot;helm.charts[0].version=1.43.2&quot;</span>
-</span></code></pre></div>
-<h4 id="verify-service-template">Verify service template</h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>kubectl<span class="w"> </span>get<span class="w"> </span>servicetemplates<span class="w"> </span>-A
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1"># NAMESPACE    NAME                           VALID</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># kcm-system   opencost-1-43-2                true</span>
-</span></code></pre></div>
-<h4 id="deploy-service-template">Deploy service template</h4>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">k0rdent.mirantis.com/v1alpha1</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ClusterDeployment</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1"># kind: MultiClusterService</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nn">...</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="nt">serviceSpec</span><span class="p">:</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="nt">services</span><span class="p">:</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">template</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">opencost-1-43-2</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">opencost</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">        </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">opencost</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">        </span><span class="nt">values</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">          </span><span class="no">opencost:</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">            </span><span class="no">ui:</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">              </span><span class="no">ingress:</span>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">                </span><span class="no">enabled: true</span>
-</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">                </span><span class="no">ingressClassName: nginx</span>
-</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">                </span><span class="no">hosts:</span>
-</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">                  </span><span class="no">- host: &#39;opencost.example.com&#39;</span>
-</span></code></pre></div>
-</div>
-</div>
-</div>
+<h1 id="how-to-contribute-an-application">How to Contribute an Application</h1>
+<p>To add an application to the k0rdent open-source applications catalog, create a pull request (PR) in the <strong><a href="https://github.com/k0rdent/catalog">catalog repository</a></strong>.</p>
+<p>The PR should include the following updates:</p>
+<h2 id="add-a-catalog-application-page">Add a catalog application page</h2>
+<p>Add a <code>mkdocs/app/&lt;my-app&gt;/data.yaml</code> file.</p>
+<h2 id="add-a-working-example">Add a working example</h2>
+<p>Create an example folder for the application in the catalog <strong><a href="https://github.com/k0rdent/catalog/tree/main/examples">examples folder</a></strong>.</p>
+<p>Ensure the example works with a <strong><a href="https://github.com/k0rdent/catalog/tree/main/examples#run-example">common testing workflow</a></strong> so that anyone can easily verify its functionality.</p>
 
 
 
 
 
 
-
-  
-  
 
 
 
@@ -355,7 +290,7 @@ Looking for Commercial Support? <a class="bold" href="https://www.kubecost.com/k
     <div class="md-main">
       <div class="md-main__inner md-grid">
         <div class="md-content__inner md-typeset">
-          <a href="../../.."><b>BACK TO CATALOG</b></a>
+          <a href=".."><b>BACK TO CATALOG</b></a>
         </div>
       </div>
     </div>
@@ -368,7 +303,7 @@ Looking for Commercial Support? <a class="bold" href="https://www.kubecost.com/k
         <div class="md-copyright">
     <div class="footer-logo">
         
-  <img src="../../../img/k0rdent-catalog-logo-title.svg" alt="logo">
+  <img src="../img/k0rdent-catalog-logo-title.svg" alt="logo">
 
     </div>
     <div class="social-links">
@@ -415,10 +350,10 @@ Looking for Commercial Support? <a class="bold" href="https://www.kubecost.com/k
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "content.tabs.link", "search.highlight", "search.share", "search.suggest", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.tabs.link", "search.highlight", "search.share", "search.suggest", "toc.integrate"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../assets/javascripts/bundle.f1b6f286.min.js"></script>
       
     
   </body>

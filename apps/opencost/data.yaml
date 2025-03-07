@@ -42,4 +42,3 @@ deploy_code: |
                     hosts:
                       - host: 'opencost.example.com'
     ~~~
-doc_link: https://opencost.io/

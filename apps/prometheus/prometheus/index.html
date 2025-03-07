@@ -1,9 +1,9 @@
 
-<meta name="tags" content="Finops, Observability">
-<meta name="md_description" content="Monitor your cloud costs.">
-<meta name="md_title" content="OpenCost">
+<meta name="tags" content="Observability">
+<meta name="md_description" content="From metrics to insight">
+<meta name="md_title" content="Prometheus">
 <meta name="md_link" content="">
-<meta name="md_logo" content="https://github.com/opencost/opencost-website/blob/d8f2a459dd958bf3033dc479f0c0a7677bae03ca/static/img/opencostpig.png?raw=true">
+<meta name="md_logo" content="https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png">
 
 
 
@@ -15,7 +15,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Monitor your cloud costs.">
+        <meta name="description" content="From metrics to insight">
       
       
         <meta name="author" content="Mirantis, Inc.">
@@ -29,7 +29,7 @@
     
     
       
-        <title>OpenCost - k0rdent Catalog</title>
+        <title>Prometheus - k0rdent Catalog</title>
       
     
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#opencost" class="md-skip">
+        <a href="#prometheus" class="md-skip">
           Skip to content
         </a>
       
@@ -261,12 +261,6 @@
       
       
       
-        <span class="md-tag">Finops</span>
-      
-    
-      
-      
-      
         <span class="md-tag">Observability</span>
       
     
@@ -277,30 +271,28 @@
   
 
 
-<p><img _="," align="right" alt="logo" src="https://github.com/opencost/opencost-website/blob/d8f2a459dd958bf3033dc479f0c0a7677bae03ca/static/img/opencostpig.png?raw=true" width="100" /></p>
-<h1 id="opencost">OpenCost</h1>
+<p><img _="," align="right" alt="logo" src="https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png" width="100" /></p>
+<h1 id="prometheus">Prometheus</h1>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Description</label><label for="__tabbed_1_2">Install</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>OpenCost is a vendor-neutral open-source project for measuring and allocating cloud infrastructure and container costs in real-time.
-It's specifically designed for Kubernetes cost monitoring, providing visibility into your spending and helping you understand how
-resources are being used.</p>
-<p><br>
-Looking for Commercial Support? <a class="bold" href="https://www.kubecost.com/kubernetes-cost-optimization/kubecost-vs-opencost/" target="_blank">LEARN MORE</a></p>
+<p>Prometheus is an open-source systems monitoring and alerting toolkit originally built at SoundCloud.
+Since its inception in 2012, many companies and organizations have adopted Prometheus, and
+the project has a very active developer and user community.</p>
 </div>
 <div class="tabbed-block">
 <h4 id="prerequisites">Prerequisites</h4>
 <p>Deploy k0rdent: <a href="https://docs.k0rdent.io/v0.1.0/guide-to-quickstarts/#guide-to-quickstarts">QuickStart</a></p>
 <h4 id="install-template-to-k0rdent">Install template to k0rdent</h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>opencost<span class="w"> </span>oci://ghcr.io/k0rdent/catalog/charts/kgst<span class="w"> </span>-n<span class="w"> </span>kcm-system<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span>--set<span class="w"> </span><span class="s2">&quot;helm.repository.url=https://opencost.github.io/opencost-helm-chart&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span>--set<span class="w"> </span><span class="s2">&quot;helm.charts[0].name=opencost&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span>--set<span class="w"> </span><span class="s2">&quot;helm.charts[0].version=1.43.2&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>prometheus<span class="w"> </span>oci://ghcr.io/k0rdent/catalog/charts/kgst<span class="w"> </span>-n<span class="w"> </span>kcm-system<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span>--set<span class="w"> </span><span class="s2">&quot;helm.repository.url=https://prometheus-community.github.io/helm-charts&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span>--set<span class="w"> </span><span class="s2">&quot;helm.charts[0].name=prometheus&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span>--set<span class="w"> </span><span class="s2">&quot;helm.charts[0].version=27.5.1&quot;</span>
 </span></code></pre></div>
 <h4 id="verify-service-template">Verify service template</h4>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>kubectl<span class="w"> </span>get<span class="w"> </span>servicetemplates<span class="w"> </span>-A
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1"># NAMESPACE    NAME                           VALID</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># kcm-system   opencost-1-43-2                true</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1"># NAMESPACE    NAME                       VALID</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># kcm-system   prometheus-27-5-1          true</span>
 </span></code></pre></div>
 <h4 id="deploy-service-template">Deploy service template</h4>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">k0rdent.mirantis.com/v1alpha1</span>
@@ -309,17 +301,9 @@ Looking for Commercial Support? <a class="bold" href="https://www.kubecost.com/k
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nn">...</span>
 </span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="nt">serviceSpec</span><span class="p">:</span>
 </span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="nt">services</span><span class="p">:</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">template</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">opencost-1-43-2</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">opencost</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">        </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">opencost</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">        </span><span class="nt">values</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">          </span><span class="no">opencost:</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">            </span><span class="no">ui:</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">              </span><span class="no">ingress:</span>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">                </span><span class="no">enabled: true</span>
-</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">                </span><span class="no">ingressClassName: nginx</span>
-</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">                </span><span class="no">hosts:</span>
-</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">                  </span><span class="no">- host: &#39;opencost.example.com&#39;</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">template</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">prometheus-27-5-1</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">prometheus</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">        </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">prometheus</span>
 </span></code></pre></div>
 </div>
 </div>
